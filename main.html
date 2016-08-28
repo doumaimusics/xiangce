@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首  页</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/lavalamp_test.css" type="text/css" media="screen">
+<!-- -->   <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/thickbox_plus.js"></script>
+<link rel="stylesheet" type="text/css" href="css/thickbox.css"/>
+<style type="text/css">
+#top_div {
+	margin-top:5px;
+	margin-left:10px;
+	height:100px;
+	width:980px;
+}
+a {
+	text-decoration:none;
+}
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--
+  jQuery library
+-->
+<script type="text/javascript" src="lib/jquery-1.2.1.pack.js"></script>
+<!--
+  jCarousel library
+-->
+<script type="text/javascript" src="lib/jquery.jcarousel.pack.js"></script>
+<!--
+  jCarousel core stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="lib/jquery.jcarousel.css" />
+<!--
+  jCarousel skin stylesheet
+-->
+<link rel="stylesheet" type="text/css" href="skins/tango/skin.css" />
+<style type="text/css">
+/*
+ 
+ 
+ Overwrite for having a carousel with dynamic width.
+ */
+.jcarousel-skin-tango.jcarousel-container-horizontal {
+	width: 85%;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width: 100%;
+}
+</style>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('ul').jcarousel({
+            visible: 4
+        });
+    });
+$(document).ready(function(){
+   $("#login").click(function(){
+	  var username=$("#username").val();
+	  var pwd=$("#pwd").val();
+	  if(username!="admin"||pwd!="admin")
+	  {
+		  alert("登录失败！");
+		  }
+	  else
+	  {
+		  $("#login").attr("href","index.html");
+		  }
+	  });
+})
+</script>
+</head>
+<body>
+<div id="top_div"> <img src="images/whatsnewtt.jpg" width="980" id="top_img" height="99" /> </div>
+<div style=" margin-top:5px; margin-left:10px; width:980px; height:20px;">
+  <table width="578" border="0" height="30px">
+    <tr>
+      <td>用户名：</td>
+      <td><input type="text"  name="username" id="username"/></td>
+      <td>密码：</td>
+      <td><input type="password"  name="pwd" id="pwd"/></td>
+      <td><a href="#" id="login">登录</a></td>
+      <td><a href="AddUser.html">注册</a></td>
+    </tr>
+  </table>
+</div>
+<div style=" margin-top:30px; margin-left:10px;">
+  <div>《风景画》</div>
+  <ul id="mycarousel" class="jcarousel-skin-tango">
+    <li><img src="photos/image1.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image2.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image3.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image5.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image4.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image4.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image5.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image5.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image5.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="photos/image5.jpg" width="175" height="75" alt="" /></li>
+  </ul>
+  <img src="photos/20060905030313389.gif" style=" margin-left:800px;"/> <br />
+  <br />
+  <div>《时尚居室》</div>
+  <ul id="mycarouse2" class="jcarousel-skin-tango">
+    <li><img src="时尚家居/aa.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/aaa.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/bn.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/fdsf.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/sds.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/gg.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/nn.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/sds.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/sas.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="时尚家居/sas.jpg" width="175" height="75" alt="" /></li>
+  </ul>
+  <img src="photos/20060905030313389.gif" style=" margin-left:800px;"/> <br />
+  <br />
+  <div>《美图》</div>
+  <ul id="Ul1" class="jcarousel-skin-tango">
+    <li><img src="美图/0322_3.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0322_4.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0415_1.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0415_2.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0417_3.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0417_4.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0427_1.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0427_2.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0427_4.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="美图/0430_1.jpg" width="175" height="75" alt="" /></li>
+  </ul>
+  <img src="photos/20060905030313389.gif" style=" margin-left:800px;"/> <br />
+  <br />
+  <div>《壁纸》</div>
+  <ul id="Ul2" class="jcarousel-skin-tango">
+    <li><img src="壁纸/qbg_001.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_002.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_003.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_004.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_005.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_006.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_007.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_008.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_009.jpg" width="175" height="75" alt="" /></li>
+    <li><img src="壁纸/qbg_010.jpg" width="175" height="75" alt="" /></li>
+  </ul>
+  <img src="photos/20060905030313389.gif" style=" margin-left:800px;"/> </div>
+</body>
+</html>
